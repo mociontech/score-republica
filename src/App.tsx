@@ -63,14 +63,17 @@ function App() {
   const handleScore = async () => {
     const url = `https://mocionws.info/dbController.php?method=allData&table=view_innovacion_creativa&field=email&value=${email}`;
     await axios.get(url).then(res => {
-      const {total, reward} = res.data[0]
-      setPoints(total);
-      if(total !== "20" && reward === "0")
-        setScreenActive(1);
-      else if(total === "20" && reward === "0")
-        setScreenActive(2);
-      else
-        setScreenActive(3);
+      if(res.data[0].length){
+        const {total, reward} = res.data[0]
+        setPoints(total);
+        if(total !== "20" && reward === "0")
+          setScreenActive(1);
+        else if(total === "20" && reward === "0")
+          setScreenActive(2);
+        else
+          setScreenActive(3);
+      }else
+        alert('Email no registrado, valida el email ingresado.');
     });
   }
   
