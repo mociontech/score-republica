@@ -63,7 +63,7 @@ function App() {
   const handleScore = async () => {
     const url = `https://mocionws.info/dbController.php?method=allData&table=view_innovacion_creativa&field=email&value=${email}`;
     await axios.get(url).then(res => {
-      if(res.data[0].length){
+      if(res.data.length){
         const {total, reward} = res.data[0]
         setPoints(total);
         if(total !== "20" && reward === "0")
