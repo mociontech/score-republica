@@ -1,0 +1,101 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-position: center;
+  background-image: url('/back.webp');
+}
+
+.screen{
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+  font-size: xx-large;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 3rem;
+}
+
+.active{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.zero{
+  background-image: url('/1.jpeg');
+  cursor: pointer;
+}
+
+.one{
+  background-image: url('/2.jpeg');
+}
+
+.two{
+  background-image: url('/3.jpeg');
+}
+
+.three{
+  background-image: url('/4.jpeg');
+}
+
+.email{
+  position: absolute;
+  top: 33.3rem;
+  width: 21rem;
+  left: 29.8rem;
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding: .7rem;
+}
+
+.email:focus{
+  outline: none;
+}
+
+.btn-consultar{
+  width: 100vw;
+  height: 4rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/btn.png');
+  position: absolute;
+  left: 0rem;
+  top: 39rem;
+  cursor: pointer;
+}
+
+.btn-reclamar{
+  width: 100vw;
+  height: 4rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/btn2.png');
+  position: absolute;
+  left: 0rem;
+  top: 42rem;
+  cursor: pointer;
+}
+
+.points{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  width: 98vw;
+  top: 28rem;
+  padding: 1.2rem 0;
+  font-size: 42px;
+  left: .8rem;
+}
