@@ -101,7 +101,7 @@ function App() {
         setEmail('');
         setPoints('');
         setScreenActive(0);
-      }, 10000);
+      }, 100000);
     }
 
     return () => {
